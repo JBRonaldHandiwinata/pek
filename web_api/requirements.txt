@@ -1,0 +1,7 @@
+fastapi
+redis
+uvicorn
+pydantic
+websockets
+wsproto
+aiokafka
