@@ -21,7 +21,7 @@ class ApiBase{
     );
     try {
       var head =  {'Content-Type': 'application/json'};
-      final response = await http.post(Uri.https(BASE_URL, url), body: json.encode(body), headers: head)
+      final response = await http.post(Uri.http(BASE_URL, url), body: json.encode(body), headers: head)
           .timeout(const Duration(seconds: 60));
 
       responseJson = _returnResponse(response, bc);
