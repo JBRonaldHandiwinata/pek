@@ -192,3 +192,5 @@ app.*.map.json
 */*.iml
 */android/*.iml
 */.gradle/
+
+kafka/bitnami/*
