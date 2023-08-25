@@ -9,7 +9,7 @@ POC fastapi microservice architecture using Kafka
 Frontend: Dart/Flutter
 Backend: 
   * Python 3.8 (FastApi Framework)
-  * Kafka
+  * Apache Kafka
 ```
 
 ## Installation
