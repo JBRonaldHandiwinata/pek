@@ -6,9 +6,10 @@ POC fastapi microservice architecture using Kafka
 
 ## Tech Stack
 ```
-Frontend: Dart/Flutter
+Mobile App: Dart/Flutter
+Web App: ReactJS
 Backend: 
-  * Python 3.8 (FastApi Framework)
+  * Python 3.8 (FastAPI Framework)
   * Apache Kafka
 ```
 
