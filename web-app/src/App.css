@@ -3,8 +3,10 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  /* height: 40vmin; */
+  height: 10vmin;
   pointer-events: none;
+  margin-bottom: 40px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -28,6 +30,14 @@
   color: #61dafb;
 }
 
+.App-header > .message-content{
+  text-align: left; 
+  padding:20px;
+  color: white;
+  margin-top: 20px;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -37,6 +47,6 @@
   }
 }
 
-.message{
-  color: white;
+.msg-time{
+  font-size: small;
 }

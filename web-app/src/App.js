@@ -1,4 +1,5 @@
 // import logo from './logo.svg';
+import logo from './pek.png';
 import React, { useState, useEffect } from "react";
 import './App.css';
 
@@ -8,8 +9,7 @@ function App() {
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-    // const url = "ws://127.0.0.1:2024/ws";
-    const url = "ws://103.41.205.80:2024/ws";
+    const url = "ws://127.0.0.1:2024/ws";
     const ws = new WebSocket(url);
 
     ws.onopen = (event) => {
@@ -35,17 +35,21 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+      <div className='image-holder'>
+        <img src={logo} className="App-logo" alt="logo" />
+      </div>
 
-        <p>PeK Automotive: </p>
-        {messages.map((value, index) => {
-          return(
-            <div key={index}>
-              <div className="message">Message: {value.msg}</div>
-              <div className="message">Received at: {value.dt}</div>
-            </div>
-          )
-       })}
-
+        <div className="message-content">
+          {messages.map((value, index) => {
+            return(
+              <div key={index}>
+                <div className="message">Message: {value.msg}</div>
+                <br/>
+                <div className="message msg-time">Received at: {value.dt}</div>
+              </div>
+            )
+        })}
+        </div>
 
       </header>
       
